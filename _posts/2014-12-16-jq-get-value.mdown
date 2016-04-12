@@ -5,7 +5,10 @@ categories: [jq]
 author: chenghaojie
 excerpt: "jq问题"
 ---
-  
+
+* content
+{:toc}
+
     var input=$j("[name=items]:checkbox");//取得name为items的checkbox
 
     var data="";

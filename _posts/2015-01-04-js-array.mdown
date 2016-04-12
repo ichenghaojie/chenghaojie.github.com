@@ -6,6 +6,9 @@ author: chenghaojie
 excerpt: "js 数组操作"
 ---
 
+* content
+{:toc}
+
 这个事例是关于数组的练习，具体请看：[js.fgm](http://js.fgm.cc/learn/lesson4/07.html) <br/>
 
 数组从前面插入：unshift() ， 从后面插入 push() ，从前面挤出 shift() ，从后面 挤出 pop();

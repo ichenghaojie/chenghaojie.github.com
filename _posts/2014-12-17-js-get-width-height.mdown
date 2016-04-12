@@ -6,6 +6,9 @@ author: chenghaojie
 excerpt: "js 获取宽高"
 ---
 
+* content
+{:toc}
+
 >网页可见区域宽： document.body.clientWidth
 
 >网页可见区域高： document.body.clientHeight

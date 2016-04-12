@@ -6,6 +6,9 @@ author: chenghaojie
 excerpt: "js 事件绑定"
 ---
 
+* content
+{:toc}
+
 事件处理函数的绑定和解绑，这里凡是要处理事件解绑和绑定的，都要单独创建 一个 EventUtil 对象，通过他的 addHandler removeHandler 来绑定和解绑函数。<br/>
 
 >addHandler 方法，他分别视情况使用DOM0级方法、DOM2级方法或IE方法来添加事件。<br/>

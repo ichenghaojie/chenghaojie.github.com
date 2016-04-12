@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 一点碎碎念
+title: 关于
 permalink: /about/
 icon: glyphicon-heart
 ---

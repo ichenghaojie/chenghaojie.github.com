@@ -1,0 +1,62 @@
+---
+layout: post
+title: 常用数组方法的使用
+categories: [js]
+author: chenghaojie
+excerpt: "js 数组操作"
+---
+
+这个事例是关于数组的练习，具体请看：[js.fgm](http://js.fgm.cc/learn/lesson4/07.html) <br/>
+
+数组从前面插入：unshift() ， 从后面插入 push() ，从前面挤出 shift() ，从后面 挤出 pop();
+
+    //删除第一项， shift() 方法
+    (aTmp.shift(), this.value = this.value.replace("删除","添加"), bS1 = false) ;
+    
+    //添加第一项， unshift() 方法
+    //这里this.value = this.value.replace("添加","删除")是改变按钮的value使之动态变化。
+    (aTmp.unshift("January(1)"), this.value = this.value.replace("添加","删除"), bS1 = true);
+    
+    //删除最后一项, pop()方法
+    (aTmp.pop(), this.value = this.value.replace("删除","添加"), bS2 = false) ;
+    
+    //添加最后一项, push()方法
+    (aTmp.push("December(12)"), this.value = this.value.replace("添加","删除"), bS2 = true);
+    
+    //复制, concat()方法
+    //replace(/\s/g,"")用正则去除空格，\s： space， 空格
+    aDiv[1].innerHTML = aTmp.concat(aTmp).toString().replace(/\s/g,"")
+    
+    //复制之后还原, 利用数组的 length 特点
+    aTmp.length = 10;
+    
+    //删除, 2开始, 删除2个
+    aTmp.splice(1, 2);
+    
+    //插入, 2开始, 插入"orange", "purple"
+    aTmp.splice(1, 0, "orange", "purple");
+    
+    //插入, 2开始替换
+    aTmp.splice(1, 2, "#009900", "#0000ff");
+    
+  而div上显示是通过：
+  
+    //将div中的内容转为数组
+    aDiv[1].innerHTML = aTmp.join()
+    
+    //str div对象
+    aTmp = getArray(aDiv[1].innerHTML);
+    function getArray(str)
+    {
+        aTmp.length = 0; // aTmp 归零，长度变为零，就是清空数组咯
+        str = str.split(",");
+        for (var i in str)aTmp.push(str[i]);
+        return aTmp
+    }
+    
+
+最后记录一点,要获取文本的值,例如
+
+    <li class="">你好</li>
+
+获取`<li>`标签里的“你好”，可以使用li.innerHTML。同时改变`<li>`里的文本内容也可以Li.innerHTML进行赋值。

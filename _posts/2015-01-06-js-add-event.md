@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 事件的绑定与解绑
-date:   2015-01-06 15:14:54
 categories: [js]
 author: chenghaojie
 excerpt: "js 事件绑定"

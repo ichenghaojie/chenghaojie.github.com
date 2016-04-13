@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  'js中for in 和 for each in的用法和区别-转载'
-categories:[js]
+title: 转载-js中for in 和 for each in的用法和区别
+categories: [js]
 author: chenghaojie
-excerpt: js for 循环
+excerpt: "js for 循环"
 ---
+
 
 * content
 {:toc}

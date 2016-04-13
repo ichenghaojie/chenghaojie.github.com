@@ -1,7 +1,6 @@
 ---
 layout: post
 title: javascript 获取屏幕/页面的宽度和高度的方法
-date:   2014-12-17 15:14:54
 categories: [js]
 author: chenghaojie
 excerpt: "js 获取宽高"

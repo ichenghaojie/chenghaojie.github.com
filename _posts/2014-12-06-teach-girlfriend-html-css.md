@@ -4,7 +4,7 @@ title:  'js中for in 和 for each in的用法和区别-转载'
 date:   2014-12-06 15:14:55
 categories:[js]
 author: chenghaojie
-excerpt: "js for 循环"
+excerpt: js for 循环
 ---
 
 * content

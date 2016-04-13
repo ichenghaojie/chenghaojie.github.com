@@ -10,36 +10,34 @@ excerpt: Girlfriend learning write code to copy zhihu 仿造知乎zhihu，今天
 {:toc}
 
 
-My girlfriend is learning html and css recently. I told her to follow the video. Here, I recommend a video in Chinese that suite for new learners. The name of course is Getting HTML web pages dev in 8 hours ( 8小时学会HTML网页开发 ) . I watched this video at very first time. The teacher named Eighteen Swallows ( 燕十八 ) . He teached very clear even himself being on screen to show what is float or box-model.    
-<!-- ![燕十八](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-18swallows.png) -->
+本文将谈谈javascript 中for in 和 for each in的用法和区别
 
-> Here is the site of the free online video.   
-> [http://study.163.com/course/courseMain.htm?courseId=432008](http://study.163.com/course/courseMain.htm?courseId=432008)    
+区别一：
 
-> I did the detailed note about this course. You can read here:   
-> [http://wenku.baidu.com/view/aa136099f90f76c660371a35](http://wenku.baidu.com/view/aa136099f90f76c660371a35)   
+    for in是javascript 1.0 中发布的。
+    for each in是作为E4X标准的一部分在javascript 1.6中发布的，而它不是ECMAScript标准的一部分。
+    这将意味着存在各种浏览器的兼容性问题。for each in，对很多浏览器都不支持的。例如是不支持IE6，IE7，IE8等浏览器的。
 
-<br>
-<br>
+区别二：
 
+    var 长方形= { 高:"15", 宽:"25" };
 
-Now I'll tell something happend today. She has watched the video above, and knows a little on BootStrap. So she wants to do some pages with BootStrap.    
+    for (var i in 长方形){
+    alert( i + "，" + 长方形[i] );
+    }
+结果依次是： 高，15 ； 宽，25 ；
 
-We determined to copy the pages on [Zhihu](http://zhihu.com)   
-Like this:   
-![知乎zhihu](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-zhihu.jpg)   
+    for each (var i in 长方形){
+    alert( i + "，" + 长方形[i] );
+    }
+结果依次是： 15， undefined ； 25， undefined；
 
-I teached her [Boostrap](http://www.bootcss.com/) this afternoon. She has already got to read the docs and can code simple statics pages.   
+两种遍历方法的变量i的值是不一样的，for each in无法获得对象的属性名，只能获取到属性值。
 
-She seems to like Web Pages Design. Though she used to be a Graphic Designer. And now, she really works hard.
+最后总结一下使用建议：
 
-<br>
-<br>
+1. 遍历普通数组，建议使用原生的遍历方法for，不要贪图方便，因为for in 和for each in均存在浏览器的兼容问题，不能保证它们对数组的遍历顺序（如果对顺序的不作要求的话，可以使用for in ，但本人不建议），有兴趣话，可以阅读的下一篇文章《for in 的浏览器兼容问题》。
 
+2. 遍历对象，由于for没办法提供理想的遍历，因而只能选择其他方法。这里建议使用for in ，从上面讲解的区别，for in比for each 更具优势，for in能获取索引和属性值，而for each只能获取属性值，而且for each在很多低版本的浏览器是不支持。
 
-At last I'll show the works that we did together in 2 hours. It's unfinished. I guess she will do it later. It's a nice weekend, isn't it?   
-
-> [*to see Copy Zhihu, click here*](http://gaohaoyang.github.io/works/bootstrap-zhihu/)   
-
-screenshot of copy Zhihu
-![Copy Zhihu](http://7q5cdt.com1.z0.glb.clouddn.com/teach-girlfriend-html-CopyZhihu.jpg)
+如要转载，请注明出处 -- 网海聚焦（WEB攻城狮）

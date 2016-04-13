@@ -62,4 +62,4 @@ box-shadow属性至多有6个参数设置，他们分别取值：
 
 最后效果图是这样：
 
-<img class="" title="调试页面" src="https://raw.githubusercontent.com/ichenghaojie/ichenghaojie.github.io/master/images/box-shadow-img.png" alt="" width="500" height="430" />
+<img class="" title="css3" src="https://raw.githubusercontent.com/ichenghaojie/ichenghaojie.github.io/master/images/box-shadow-img.png" alt="" width="500" height="430" />

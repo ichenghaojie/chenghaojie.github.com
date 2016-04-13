@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 事件的转载-常用正则表达式绑定与解绑
+date:   2015-01-15 15:14:54
 categories: [js]
 author: chenghaojie
 excerpt: "js 正则匹配"

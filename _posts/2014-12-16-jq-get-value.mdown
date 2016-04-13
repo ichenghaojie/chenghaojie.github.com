@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 关于JQ取父元素的值以及自定义序列化字符串以符合json格式
+date:   2014-12-16 15:14:54
 categories: [jq]
 author: chenghaojie
 excerpt: "jq问题"

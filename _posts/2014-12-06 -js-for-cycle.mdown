@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 转载-js中for in 和 for each in的用法和区别
+date:   2014-12-06 15:14:54
 categories: [js]
 author: chenghaojie
 excerpt: "js for 循环"

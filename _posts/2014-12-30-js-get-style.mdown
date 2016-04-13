@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 一个有用的css的函数，以及获取样式的方法
+date:   2014-12-30 15:14:54
 categories: [js]
 author: chenghaojie
 excerpt: "js 获取css"

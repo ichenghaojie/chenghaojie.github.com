@@ -1,11 +1,9 @@
 ---
 layout: page
-title: 关于本站
+title: 关于
 permalink: /about/
 icon: glyphicon-heart
----
-
-### 一点碎碎念   
+--- 
 
 我现在的博客主要是 'for personal use',
 

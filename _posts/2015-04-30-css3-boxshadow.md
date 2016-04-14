@@ -11,9 +11,10 @@ excerpt: "css3 画图"
 {:toc}
 
 
-###我们使用box-shadow制作阴影，但也可以利用它来画图。
+我们使用box-shadow制作阴影，但也可以利用它来画图。
 
     box-shadow:inset x-offset y-offset blur-radius spread-radius color
+    
 也就是：对象选择器 {box-shadow:投影方式 X轴偏移量 Y轴偏移量 阴影模糊半径 阴影扩展半径 阴影颜色}
 
 >取值：<br/>

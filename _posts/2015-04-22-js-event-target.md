@@ -20,6 +20,7 @@ excerpt: "js 事件源捕获"
         if(oTarget.tagName.toUpperCase() == "A") {
         }
     }
+    
 在oTips里面有需要进行点击操作的选项，例如按钮或者一些菜单的点击。<br/>
 相比于使用for循环的操作，利用事件源可以更好的在函数外进行操作，<br/>
 例如在另外一个函数类使用`oThis.aSort[3].click();`其中`this.aSort[]`是`oTips`里面的元素，<br/>

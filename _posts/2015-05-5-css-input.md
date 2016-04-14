@@ -21,6 +21,7 @@ excerpt: "css input按钮兼容"
     color: white;
     }
     <input type="submit" value="提交" />
+
 这是很简单的一个input提交按钮，它在每个浏览器中的效果都是长短不一，参差不齐的，哪个是标准的也不好说。<br/>
 现在我们来对他进行一个修正，修正样式如下：
 
@@ -37,6 +38,7 @@ excerpt: "css input按钮兼容"
     width: auto; 现代浏览器下识别
     *width: 1; IE7和IE6识别，设置值为1,我也不知道有何作用，但有些人此处设置值为0
     }
+    
 后面有注释的六行就是后来添加的。而在chrome下高度”有问题”，不符合我们的预期。
 
 >经测试，firefox下给input设置line-height值是无效的。<br/>

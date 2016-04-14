@@ -15,6 +15,7 @@ excerpt: "js 数组排序"
 >代码如下：
 
     aData.sort(function (a, b) {return Math.random() > 0.5 ? -1 : 1});
+    
 其中aDta是一个数组，这里使用.sort()函数。<br/>
 关于sort()函数，在JS中Array对象里内置了一个函数：`arrayobj.sort([sortfunction])`<br/>
 这个函数将Array 对象进行适当的排序；在执行过程中并不会创建新的 Array 对象。<br/>

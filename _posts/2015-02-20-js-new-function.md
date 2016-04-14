@@ -16,6 +16,7 @@ excerpt: "js new关键词"
     window.onload=function(){
         new autoPlay("box");
     }
+
 如果缺少了new这个关键词，就会报错，提示`this.play is not a function`<br/>
 程序大致是这样的：
 
@@ -26,9 +27,11 @@ excerpt: "js new关键词"
     window.onload=function(){
     new autoPlay("box");
     }
+
 然后到处查了下其他博客。<br/>
 
 下面摘至：[对new functionName()的理解 ](http://blog.csdn.net/stalwartwill/article/details/26451461；)<br/>
+
 >比如定义一个函数的两种调用方法：
 
     function getInfo() {
@@ -37,6 +40,7 @@ excerpt: "js new关键词"
         };
         return info;
     }
+
 1.var info1 = getInfo();
 
 2.var info2 = new getInfo();
@@ -59,6 +63,7 @@ excerpt: "js new关键词"
     autoPlay.prototype={
         play:function(id){}
     }
+    
 >而不推荐：
 
     var autoPlay=function(id){

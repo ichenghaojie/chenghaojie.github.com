@@ -13,6 +13,7 @@ excerpt: "js Math.random方法"
 
 Math.random()方法返回介于0 到1 之间一个随机数，不包括0 和1。<br/>
 如果想大于这个范围的话，可以套用一下公式：<br/>
+
 >值= Math.floor(Math.random() * 总数+ 第一个值)
 
 >alert(Math.floor(Math.random() * 10 + 1)); //随机产生1-10 之间的任意数

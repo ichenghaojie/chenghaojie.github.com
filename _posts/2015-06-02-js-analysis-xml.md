@@ -63,6 +63,6 @@ JavaScript 代码（需要放在 HTML 页面中，并在浏览器中执行）
 --------------------------------
 最后记录下当传来经纬度坐标时，例如：
 
->lat = 23.14746; lng = 113.34175376;</br>
-要通过：var myLatLng = new google.maps.LatLng(lat, lng);</br>
-转换成地图能够识别的LatLng形式</br>
+>lat = 23.14746; lng = 113.34175376;<br/>
+要通过：var myLatLng = new google.maps.LatLng(lat, lng);<br/>
+转换成地图能够识别的LatLng形式<br/>

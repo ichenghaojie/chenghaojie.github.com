@@ -29,8 +29,8 @@ istanbul cover _mocha
 
 <img class="" title="node.js" src="https://raw.githubusercontent.com/ichenghaojie/ichenghaojie.github.io/master/images/nodejs-debug-2.png" alt="" width="640" height="420" />
 
-怎么回事呢，其实我也是遇到这个问题的时候也是一头雾水的，到处找资料，</br>
-后来说是那个mocha版本跟istanbu版本有很大的依赖性，</br>
+怎么回事呢，其实我也是遇到这个问题的时候也是一头雾水的，到处找资料，<br/>
+后来说是那个mocha版本跟istanbu版本有很大的依赖性，<br/>
 所以正确的方式就是安装mocha到项目目录中，然后使用项目里面的mocha进行测试，使用如下命令：
 >istanbul cover node_modules/mocha/bin/_mocha
 

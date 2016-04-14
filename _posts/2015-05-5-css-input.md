@@ -21,7 +21,7 @@ excerpt: "css input按钮兼容"
     color: white;
     }
     <input type="submit" value="提交" />
-这是很简单的一个input提交按钮，它在每个浏览器中的效果都是长短不一，参差不齐的，哪个是标准的也不好说。</br>
+这是很简单的一个input提交按钮，它在每个浏览器中的效果都是长短不一，参差不齐的，哪个是标准的也不好说。<br/>
 现在我们来对他进行一个修正，修正样式如下：
 
     .item input {
@@ -39,9 +39,9 @@ excerpt: "css input按钮兼容"
     }
 后面有注释的六行就是后来添加的。而在chrome下高度”有问题”，不符合我们的预期。
 
->经测试，firefox下给input设置line-height值是无效的。</br>
-这应该是firefox中已经给input标签的line- height值定死了，那就只有从height和padding入手了。</br>
-经测试，firefox和chrome下，input中padding都有一个默认值padding:0 0.5em;</br>
-当我们将padding调至此默认值时发现IE下的input按钮的高度有了变化。</br>
-再经过height与line-height协调</br>
-这时候input按钮的高度在各大浏览器下都一样了。</br>
+>经测试，firefox下给input设置line-height值是无效的。<br/>
+这应该是firefox中已经给input标签的line- height值定死了，那就只有从height和padding入手了。<br/>
+经测试，firefox和chrome下，input中padding都有一个默认值padding:0 0.5em;<br/>
+当我们将padding调至此默认值时发现IE下的input按钮的高度有了变化。<br/>
+再经过height与line-height协调<br/>
+这时候input按钮的高度在各大浏览器下都一样了。<br/>

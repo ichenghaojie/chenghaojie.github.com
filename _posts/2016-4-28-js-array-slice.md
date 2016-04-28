@@ -37,8 +37,7 @@ Array.prototype.slice.call(arguments)能够将arguments转成数组，等价于a
         } catch(e){
                 var arr = [];
                 for(var i = 0,len = s.length; i < len; i++){
-                    //arr.push(s[i]);
-                    arr[i] = s[i];  //据说这样比push快
+                    arr.push(s[i]);
                 }
                 return arr;
         }
